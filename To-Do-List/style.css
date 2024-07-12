@@ -1,0 +1,196 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: transform 0.2s ease;
+
+}
+
+body {
+    background: #1e293b;
+    overflow: hidden;
+}
+
+.container {   
+    max-width: 500px;
+    margin: 140px auto;
+    background: #fff;
+    border-radius: 6px;
+    padding: 25px 0;
+}
+
+.input-box {
+    height: 50px;
+    padding: 0 50px;
+    position: relative;
+
+}
+
+.input-box i {
+    position: absolute;
+    top: 35%;
+    transform: translate(10px, -5%);
+}
+
+
+
+.input-box input {
+    height: 100%;
+    width: 100%;
+    padding: 0 20px 0 30px;
+    font-size: 15px;
+    border-radius: 6px;
+    border: 1px solid gray;
+    outline: none;
+}
+
+
+.butonlar,li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.butonlar {
+    
+    padding: 20px 50px;
+    border-bottom: 1px solid #fff;
+    
+    
+}
+
+.span-box span{
+    cursor: pointer;
+    margin: 0px 8px;
+    font-size: 20px;
+    
+
+}
+
+.span-box span.tiklama{
+    color: black;
+}
+
+.butonlar .temizle-btn {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    background: #1e293b;
+    border-radius: 5px;
+    padding: 8px 14px;
+
+}
+
+.butonlar .temizle-btn:hover {
+ font-size: 18px;
+}
+
+.span-box #hepsi:hover{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    background: #1e293b;
+    border-radius: 5px;
+    padding: 8px 14px;
+}
+
+.span-box #devameden:hover{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    background: #1e293b;
+    border-radius: 5px;
+    padding: 8px 14px;
+}
+
+.span-box #biten:hover{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    background: #1e293b;
+    border-radius: 5px;
+    padding: 8px 14px;
+}
+
+
+.task-box{
+    margin: 20px 60px;
+}
+
+.task-box .task{
+    list-style: none;
+    font-size: 16px;
+    margin-bottom: 18px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 16px;
+    align-items: flex-start;
+}
+
+.task label{
+    display: flex;
+}
+
+.task label input{
+    margin-top: 2px;
+    margin-right: 10px;
+}
+
+.task label p{
+    user-select: none;
+    margin-left: 12px;
+    word-wrap: break-word;
+    font-size: 17px;
+}
+
+.task .ayarlar{
+    cursor: pointer;
+    position: relative;
+}
+
+.task label p.checked{
+    text-decoration: line-through;
+    font-size: 18px;
+}
+
+.ayarlar .menu{
+    position: absolute;
+    background: #fff;
+    z-index: 2;
+    padding: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 6px gray;
+    transform: scale(0);
+}
+
+
+.ayarlar .menu.show{
+    transform: scale(1);
+}
+
+
+.menu li{
+    height: 23px;
+    font-size:16px;
+    padding: 15px 10px;
+    margin-bottom: 3px;
+    justify-content: flex-start;
+}
+
+.menu li:hover{
+background: grey;
+}
+
+.menu li i{
+    padding-right: 7px;
+}
+
